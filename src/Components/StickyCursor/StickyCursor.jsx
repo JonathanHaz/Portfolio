@@ -17,8 +17,8 @@ export default function StickyCursor() {
 
     const manageMouseMove = e => {
         const { clientX, clientY } = e;
-        mouse.x.set(clientX - cursorSize / 2);
-        mouse.y.set(clientY - cursorSize / 2);
+        mouse.x.set(clientX - cursorSize / 1.1);
+        mouse.y.set(clientY - cursorSize / 1.1);
     };
 
 

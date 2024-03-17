@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import './Hero.css';
 import profile from '../../assets/newPP.png';
+import SlidingText from '../../Components/SlidingText';
 
 export default function Hero() {
   const [isJonathan, setIsJonathan] = useState(true);
@@ -19,7 +20,7 @@ export default function Hero() {
     visible: {
       opacity: 1,
       transition: {
-        delay: 0.1,
+        delay: 0.3,
         staggerChildren: 0.2
       }
     }
@@ -35,7 +36,12 @@ export default function Hero() {
   return (
     <div className='hero-container'>
       <div className='hero-content'>
-        <div className='hero-info'>
+              <motion.div className='hero-info'
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }} 
+          transition={{ duration: 1, delay: 0.4 }}
+        >
+
           <h1 key={currentText}>
             Hello World! I'm
             <motion.span 
@@ -45,22 +51,23 @@ export default function Hero() {
               animate="visible"
             >
               {Array.from(currentText).map((letter, index) => (
-                <motion.span key={index} variants={letterVariants}>{letter}</motion.span>
+                <motion.span style={{fontSize:'48px'}} key={index} variants={letterVariants}>{letter}</motion.span>
               ))}
             </motion.span>
           </h1>
           <p >Passionate about creating efficient and scalable web applications.</p>
           <p >Let's build something amazing together!</p>
-          <button>Contact</button>
-        </div>
+          <button className='heroBTN'>Resume</button>
+        </motion.div>
         <motion.div className='hero-image'
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 1, delay: 1 }}
         >
           <img src={profile} alt="" />
         </motion.div>
       </div>
+      <SlidingText/>
     </div>
   );
 }

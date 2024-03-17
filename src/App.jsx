@@ -3,13 +3,16 @@ import './App.css';
 import StickyCursor from './Components/StickyCursor/StickyCursor';
 import Navbar from './Components/Navbar/Navbar';
 import Page from './Page/Page';
+import LoadingAnimation from './Components/LoadingAnimation';
+import SlidingText from './Components/SlidingText';
 
 function App() {
   
 
     return (
         <div >
-        {/* <StickyCursor/> */}
+        <LoadingAnimation/>
+        <StickyCursor/>
         <Navbar/>
         <Page/>
         </div>

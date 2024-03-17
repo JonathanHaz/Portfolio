@@ -4,4 +4,6 @@
     background-color: rgba(0, 192, 182, 0.733);
     position: fixed;
     border-radius: 50%;
+    z-index: 9999;
+    mix-blend-mode: screen;
 }
