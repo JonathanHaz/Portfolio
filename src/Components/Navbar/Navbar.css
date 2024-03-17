@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    color: white;
+  }
+  
+  .navlinks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navlinks li {
+    margin-right: 20px;
+  }
+  
+  .navlinks li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .navlinks li a:hover {
+    color: #99cbfa; /* Change color on hover */
+  }
+  
+ 
