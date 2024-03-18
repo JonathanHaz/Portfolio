@@ -19,7 +19,7 @@ export default function Skills() {
   
   return (
     <motion.section
-      className='skills-container' data-aos="fade-up" data-aos-delay="100">
+      className='skills-container'>
         <h1 style={{fontSize:"40px"}}>My Skills</h1>
         <h1>Here are some of my skills on which I have been working on for the past year.</h1>
       <div className="card-container">

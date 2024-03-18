@@ -8,6 +8,11 @@
   background: radial-gradient(circle, rgba(130,0,204,1) 0%, rgb(68, 0, 203) 100%);
   margin: 0 auto; 
   backdrop-filter: blur(8px); /* Apply the blur effect */
+  transition: top 0.3s ease-in-out; /* Add transition for smoother appearance */
+}
+
+.navbar.hidden {
+  top: -100px; /* Move the Navbar up to hide it */
 }
 
 .navlinks {

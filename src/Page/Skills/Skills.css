@@ -4,9 +4,9 @@
     align-items: center;
     justify-content: center;
     margin-top: 20em;
-    margin-bottom: 20em;
-    height: 120vh;
     border-top: 3px solid #c07f05;
+    border-bottom: 3px solid #c07f05;
+    height: 120vh;
   }
 
   .skills-container h1{
@@ -79,6 +79,7 @@
   }
   
   .skill-card:hover {
+    box-shadow: rgba(228, 220, 147, 0.411) 0px 4px 8px 10px;
     transform: translateY(-5px);
   }
   

@@ -1,47 +1,47 @@
-import React from 'react'
-import { useState } from 'react'
-import Project from './Comps/Project/Project'
-import Modal from './Comps/Modal/Modal'
+import React, { useState } from 'react';
+import Project from './Comps/Project/Project';
+import './Projects.css'
+import Modal from './Comps/Modal/Modal';
+import jobq from './Comps/Modal/images/jobq.jpg';
+import AOTEren from './Comps/Modal/images/AOTEren.webp';
+import AOTJacket from './Comps/Modal/images/AOTJacket.webp';
+import movie from './Comps/Modal/images/movie.jpg';
 
 export default function Projects() {
-
     const projects = [
         {
             title: "Resume builder",
-            src: "AkaxaDS.webp",
-            color: "#00000"
+            src: jobq,
+            link:"https://github.com/JonathanHaz/JobQ"
         },
         {
             title: "E-Commerce",
-            src: "AOTEren.webp",
-            color: "#00000"
+            src: AOTEren,
+            link:"https://github.com/JonathanHaz/JobQ"
         },
         {
             title: "JobQ",
-            src: "AOTJacket.webp",
-            color: "#00000"
+            src: AOTJacket,
+            link:"https://github.com/JonathanHaz/JobQ"
         },
         {
-            title: "Recipe",
-            src: "AOTLevi.webp",
-            color: "#00000"
+            title: "Movie App",
+            src: movie,
+            link:"https://github.com/JonathanHaz/MovieProject"
         },
-    ]
+    ];
 
-    const [modal, setModal] = useState({active:false, index:0})
+    const [modal, setModal] = useState({active: false, index: 0});
 
-  return (
-    <div className='projects-container'>
-      <h1>Projects</h1>
-      <h2>Here are some of my projects</h2>
-      <div className='project-card'>
-        {
-            projects.map((project,index)=>{
-                return <Project key={index} index={index} title={project.title} setModal={setModal}/>
-            })
-        }
-      </div>
-      <Modal modal={modal} projects={projects}/>
-    </div>
-  )
+    return (
+        <div className='main'>
+            <div className='body'>
+                <h1>Here are some of my projects</h1>
+                {projects.map((project, index) => {
+                    return <Project key={index} index={index} link={project.link} title={project.title} setModal={setModal} />;
+                })}
+            </div>
+            <Modal modal={modal} projects={projects} />
+        </div>
+    );
 }

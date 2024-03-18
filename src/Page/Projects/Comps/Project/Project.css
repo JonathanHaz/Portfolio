@@ -4,13 +4,13 @@
     padding: 50px 100px 50px 100px;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid rgb(202, 202, 202);
+    border-top: 2px solid #c07f05;
     cursor: pointer;
     transition: all .2s linear;
 }
 
 .project:hover{
-    opacity: 0.4;
+    opacity: 0.5;
 }
 
 .project h2{

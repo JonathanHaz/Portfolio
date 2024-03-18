@@ -1,21 +1,36 @@
-.modalContainer{
-    height: 350px;
-    width: 400px;
+.modalContainer {
+    height: 200px;
+    width: 200px;
+    position: fixed; /* Change to fixed to ensure it's positioned relative to the viewport */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the modal */
+    background-color: #891652;
+    overflow: hidden;
+    pointer-events: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-}
-
-.modalSlider{
+    border-radius: 10px;
+  }
+  
+  .modalSlider {
     height: 100%;
     width: 100%;
-}
-
-.modal{
-    position: relative;
-}
-
-.modal img{
-    height: auto;
-}
+    position: absolute;
+    transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  .modal {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal img {
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
