@@ -31,14 +31,14 @@ const LoadingAnimation = ({ children }) => {
           top: 0,
           left: 0,
           right: 0,
-          bottom: 0, // Adjust this value to control the curve
+          bottom: 0, 
           backgroundColor: 'purple',
           zIndex: 9999,
           borderBottomRightRadius: '40%', 
           borderBottomLeftRadius: '40%', 
-          width: '110%', // Increase the width
-          height: '150%', // Increase the width
-          marginLeft: '-5%', // Adjusting to center the curve
+          width: '110%', 
+          height: '150%', 
+          marginLeft: '-5%', 
         }}
         animate={controls}
       />

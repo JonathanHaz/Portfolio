@@ -3,9 +3,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 40em;
+    margin-top: 20em;
     margin-bottom: 20em;
-    height: 80vh;
+    height: 120vh;
+    border-top: 3px solid #c07f05;
   }
 
   .skills-container h1{
@@ -25,11 +26,11 @@
   }
   
   .card {
-    width: 30vw;
+    width: 40vw;
     height: 40vh;
     background-color:#240A34; 
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(228, 220, 147, 0.822) 0px 3px 8px;
     padding: 20px;
     margin: 10px;
   }
@@ -79,7 +80,6 @@
   
   .skill-card:hover {
     transform: translateY(-5px);
-    box-shadow: rgba(248, 237, 82, 0.3) 0px 22px 50px 4px;
   }
   
   .skill-card p {

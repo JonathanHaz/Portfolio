@@ -1,61 +1,60 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    border-radius: 5%;
-    position: sticky;
-    top: 0;
-    margin-top: -10px;
-    z-index: 10;
-    background: radial-gradient(circle, rgba(130,0,204,1) 0%, rgba(68, 0, 203, 0.555) 100%);
-  } 
-  
-  .navlinks {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .navlinks li {
-    margin-right: 20px;
-  }
-  
-  .navlinks li a {
-    text-decoration: none;
-    color: #EABE6C;
-    font-weight: 900;
-    font-size: 18px;
-    transition: all .2s
-  }
-  
-  .navlinks li a:hover {
-    color: #fc9b2e;
-  }
+  padding: 20px 40px;
+  position: sticky;
+  width: 30%;
+  border-radius: 20px;  
+  top: 10px;
+  z-index: 10;
+  background: radial-gradient(circle, rgba(130,0,204,1) 0%, rgb(68, 0, 203) 100%);
+  margin: 0 auto; 
+  backdrop-filter: blur(8px); /* Apply the blur effect */
+}
 
-  .navBTN{
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    border: .1px solid #240A34;
-    border-radius: 20px;
-    font-weight: 900;
-    background-color:#240a3400; 
-    transition: all .5s;
-  }
+.navlinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 
- .navBTN a{
+.navlinks li {
+  margin-right: 20px;
+}
+
+.navlinks li a {
   text-decoration: none;
   color: #EABE6C;
+  font-weight: 900;
+  font-size: 18px;
+  transition: all .2s;
+}
 
- }
+.navlinks li a:hover {
+  color: #fc9b2e;
+}
 
-  .navBTN:hover{
-    background-color:#240a34; 
-    cursor: pointer;
-    transform: scale(1.05);
-  }
-  
- 
+.navBTN {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: .1px solid #240A34;
+  border-radius: 20px;
+  font-weight: 900;
+  background-color:#240a3400; 
+  transition: all .5s;
+}
+
+.navBTN a {
+  text-decoration: none;
+  color: #EABE6C;
+}
+
+.navBTN:hover {
+  background-color:#240a34; 
+  cursor: pointer;
+  transform: scale(1.05);
+}

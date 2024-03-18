@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt } from 'react-icons/fa';
 import { SiBootstrap, SiMaterialdesignicons, SiMongodb, SiPostman } from 'react-icons/si';
 import { IoLogoFirebase } from "react-icons/io5";
@@ -6,48 +8,22 @@ import { FaNode } from 'react-icons/fa';
 import { IoLogoNodejs } from 'react-icons/io';
 import { RiGithubFill } from 'react-icons/ri';
 import { TbBrandVscode } from 'react-icons/tb';
-import { motion, useAnimation } from 'framer-motion'; // Import useAnimation
+import { motion } from 'framer-motion';
 import './Skills.css';
 
 export default function Skills() {
-  const [isVisible, setIsVisible] = useState(false);
-  const controls = useAnimation(); // Get animation controls
 
   useEffect(() => {
-    const handleScroll = () => {
-      const element = document.querySelector('.skills-container');
-      const elementPosition = element.getBoundingClientRect().top;
-      const screenHeight = window.innerHeight;
-
-      if (elementPosition < screenHeight * 0.7) {
-        setIsVisible(true);
-        controls.start({
-            x: 0,
-            opacity: 1,
-          });
-      } else {
-        setIsVisible(false);
-        controls.start({ x: -1000, opacity: 0, });
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [controls]); 
-
+    AOS.init();
+  }, [])
+  
   return (
     <motion.section
-      className='skills-container'
-      initial={{ x: -1000, opacity: 0 }} 
-      animate={controls} // 
-      transition={{ duration: 0.5 }}
-    >
-        <h1>My Skills</h1>
+      className='skills-container' data-aos="fade-up" data-aos-delay="100">
+        <h1 style={{fontSize:"40px"}}>My Skills</h1>
         <h1>Here are some of my skills on which I have been working on for the past year.</h1>
       <div className="card-container">
-        <div className='card'>
+        <div className='card' data-aos="flip-left" data-aos-delay="400">
           <h2>Frontend Skills</h2>
           <div className='skills'>
             <div className='skill'>
@@ -88,7 +64,7 @@ export default function Skills() {
             </div>
           </div>
         </div>
-        <div className='card'>
+        <div className='card' data-aos="flip-right" data-aos-delay="800">
           <h2>Backend Skills</h2>
           <div className='skills'>
             <div className='skill'>
@@ -118,7 +94,7 @@ export default function Skills() {
           </div>
         </div>
       </div>
-      <div className='card'>
+      <div className='card' data-aos="flip-up" >
         <h2>Other</h2>
         <div className='skills'>
           <div className='skill'>

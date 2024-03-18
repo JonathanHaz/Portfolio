@@ -1,5 +1,6 @@
 .hero-container {
-    height: 60vh;
+    height: 75vh;
+    border-bottom: 3px solid #c07f05;
   }
   
   .hero-content {
@@ -40,7 +41,7 @@
   }
   
   .hero-image img{
-    width: 30vw;
+    width: 40vw;
     filter: drop-shadow(30px 10px 4px #00000052);
     animation: slideFromLeft 10s ease forwards infinite;
   }

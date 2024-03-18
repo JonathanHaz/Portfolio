@@ -4,17 +4,17 @@ import StickyCursor from './Components/StickyCursor/StickyCursor';
 import Navbar from './Components/Navbar/Navbar';
 import Page from './Page/Page';
 import LoadingAnimation from './Components/LoadingAnimation';
-import SlidingText from './Components/SlidingText';
+import Projects from './Page/Projects/Projects';
 
 function App() {
   
 
     return (
         <div >
-        <LoadingAnimation/>
-        <StickyCursor/>
+        {/* <LoadingAnimation/>
         <Navbar/>
-        <Page/>
+        <Page/> */}
+        <Projects/>
         </div>
     );
 }
