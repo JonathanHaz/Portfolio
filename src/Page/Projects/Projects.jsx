@@ -3,25 +3,25 @@ import Project from './Comps/Project/Project';
 import './Projects.css'
 import Modal from './Comps/Modal/Modal';
 import jobq from './Comps/Modal/images/jobq.jpg';
-import AOTEren from './Comps/Modal/images/AOTEren.webp';
-import AOTJacket from './Comps/Modal/images/AOTJacket.webp';
 import movie from './Comps/Modal/images/movie.jpg';
+import resume from './Comps/Modal/images/resume.png'
+import ecommerce from './Comps/Modal/images/ecommerce.png'
 
 export default function Projects() {
     const projects = [
         {
             title: "Resume builder",
-            src: jobq,
+            src: resume,
             link:"https://github.com/JonathanHaz/JobQ"
         },
         {
             title: "E-Commerce",
-            src: AOTEren,
+            src: ecommerce,
             link:"https://github.com/JonathanHaz/JobQ"
         },
         {
             title: "JobQ",
-            src: AOTJacket,
+            src: jobq,
             link:"https://github.com/JonathanHaz/JobQ"
         },
         {

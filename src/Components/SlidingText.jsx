@@ -5,28 +5,28 @@ export default function SlidingText() {
 
     const sliderVariant = {
         initial: {
-            x: "-300%"
+            x: "-100%"
         },
         animate: {
-            x: "350%",
+            x: "200%",
             transition: {
                 repeat: Infinity,
                 repeatType: "mirror",
-                duration: 10,
+                duration: 8,
             },
         },
     };
 
     const sliderVariantt = {
         initial: {
-            x: "300%"
+            x: "200%"
         },
         animate: {
-            x: "-250%",
+            x: "-100%",
             transition: {
                 repeat: Infinity,
                 repeatType: "mirror",
-                duration: 10,
+                duration: 8,
             },
         },
     };
@@ -34,34 +34,36 @@ export default function SlidingText() {
 
     return (
         <div>
-            <motion.div
-                style={{
-                    position: "absolute", 
-                    fontSize: "10vh",
-                    bottom: "-100px",
-                    whiteSpace: "nowrap",
-                    width: "50%",
-                    fontWeight: "bold", 
-                    color: "rgba(255,255,255,1)",
-                    filter: "drop-shadow(30px 10px 4px #00000052)"
-                }}
-                className='slidingTextContainer'
-                variants={sliderVariant}
-                initial="initial"
-                animate="animate"
-            >
-                React Framer-Motion
+         <motion.div
+            style={{
+            position: "absolute", 
+            fontSize: "10vh",
+            bottom: "2em",
+            whiteSpace: "nowrap",
+            width: "50%",
+            fontWeight: "bold", 
+            color: "rgba(255,255,255,1)",
+            filter: "drop-shadow(30px 10px 4px #00000052)",
+            fontFamily: "Sharpie, sans-serif",
+            }}
+            className='slidingTextContainer'
+            variants={sliderVariant}
+            initial="initial"
+            animate="animate"
+                >
+                REACT FRAMER-MOTION
             </motion.div>
             <motion.div
                 style={{
                     position: "absolute",
                     fontSize: "10vh",
-                    bottom: "0",
+                    bottom: "1em",
                     whiteSpace: "nowrap",
                     width: "50%",
                     fontWeight: "bold",
                     color: "rgba(255,255,255,1)",
                     filter: "drop-shadow(30px 10px 4px #00000052)",
+                    fontFamily: "Sharpie, sans-serif",
 
                 }}
                 className='slidingTextContainer'
@@ -69,7 +71,7 @@ export default function SlidingText() {
                 initial="initial"
                 animate="animate"
             >
-                JavaScript Node.Js
+                JAVASCRIPT NODE.JS
             </motion.div>
         </div>
 

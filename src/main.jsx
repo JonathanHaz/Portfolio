@@ -5,7 +5,7 @@ import './index.css'
 import StickyCursor from './Components/StickyCursor/StickyCursor.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <div>
+    <div >
        <App /> 
     </div>
     

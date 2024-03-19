@@ -1,18 +1,18 @@
 .navbar {
-  padding: 20px 40px;
+  padding: 30px 40px;
   position: sticky;
-  width: 30%;
-  border-radius: 20px;  
+  width: 15%;
+  border-radius: 40px;  
   top: 10px;
   z-index: 10;
-  background: radial-gradient(circle, rgba(130,0,204,1) 0%, rgb(68, 0, 203) 100%);
+  background-color: #1c1d2073;
   margin: 0 auto; 
-  backdrop-filter: blur(8px); /* Apply the blur effect */
-  transition: top 0.3s ease-in-out; /* Add transition for smoother appearance */
+  backdrop-filter: blur(8px); 
+  transition: top 0.3s ease-in-out; 
 }
 
 .navbar.hidden {
-  top: -100px; /* Move the Navbar up to hide it */
+  top: -100px; 
 }
 
 .navlinks {
@@ -31,14 +31,14 @@
 
 .navlinks li a {
   text-decoration: none;
-  color: #EABE6C;
+  color: #EEEE;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 1.4em;
   transition: all .2s;
 }
 
 .navlinks li a:hover {
-  color: #fc9b2e;
+  color: #004c50;
 }
 
 .navBTN {

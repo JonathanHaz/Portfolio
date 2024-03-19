@@ -1,14 +1,14 @@
 .main{
     display: flex;
-    height: 100vh;
+    height: 120vh;
     align-items: center;
     justify-content: center;
-    background: rgb(130,0,204);
-    background: radial-gradient(circle, rgb(123, 1, 193) 0%, rgb(38, 0, 115) 100%);
+    background-color: rgb(255, 255, 255);
+
 }
 
 .body{
-    width: 1000px;
+    width: 100em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,6 +16,7 @@
 }
 
 .body h1{
-    color: #FFEDD8;
+    color: #000000;
+    margin-top: 4em;
     margin-bottom: 2em;
 }

@@ -4,18 +4,17 @@
     align-items: center;
     justify-content: center;
     margin-top: 20em;
-    border-top: 3px solid #c07f05;
-    border-bottom: 3px solid #c07f05;
+    background-color: rgb(255, 255, 255);
     height: 120vh;
   }
 
   .skills-container h1{
-    color: #fcdfbf;
+    color: #000;
   
   }
 
   .skills-container h2{
-    color: #FFEDD8;
+    color: #000;
   
   }
   
@@ -28,16 +27,16 @@
   .card {
     width: 40vw;
     height: 40vh;
-    background-color:#240A34; 
+    background-color:#393E46; 
     border-radius: 10px;
-    box-shadow: rgba(228, 220, 147, 0.822) 0px 3px 8px;
     padding: 20px;
     margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.973) 0px 5px 15px;
   }
   
   .card h2 {
     text-align: center;
-    color: #EABE6C;
+    color: #EEEEEE;
     text-decoration: underline;
   }
   
@@ -61,7 +60,6 @@
     font-size: 16px;
   }
   
-  /* Adjust styles for icons */
   .skill svg {
     width: 50px;
     height: 50px;
@@ -74,7 +72,7 @@
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    background-color: #891652;
+    background-color: #566364;
     transition: transform 0.3s ease-in-out;
   }
   
@@ -86,7 +84,7 @@
   .skill-card p {
     margin-top: 15px;
     font-size: 16px;
-    color: #fcdfbf;
+    color: #EEEEEE;
     padding-left: 10px;
   }
   

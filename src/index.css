@@ -1,7 +1,10 @@
 :root{
-    background: rgb(130,0,204);
     overflow-x: hidden;
-    background: radial-gradient(circle, rgb(123, 1, 193) 0%, rgb(38, 0, 115) 100%);
+    font-family: 'Hind', sans-serif;
+    font-family: 'Khand', sans-serif;
+    background-color: rgb(255, 255, 255);
+    
+
 }
 
 body{

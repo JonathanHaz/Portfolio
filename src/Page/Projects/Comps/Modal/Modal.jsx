@@ -5,7 +5,7 @@ import gsap from 'gsap';
 
     const scaleAnimation = {
         initial: {scale: 0, x: "-50%", y: "-50%"},
-        open: {scale: 1.3, x:"-50%" , y:"-50%", transition:{duration: 0.4, ease:[.76,0,.24,1]}},
+        open: {scale: 3, x:"-50%" , y:"-50%", transition:{duration: 0.4, ease:[.76,0,.24,1]}},
         closed: {scale: 0, x:"-50%" , y:"-50%", transition:{duration: 0.4, ease:[.32,0,.67,0]}}
     }
 
@@ -32,7 +32,7 @@ export default function Modal({ modal, projects }) {
                 const { title, src, link } = project; 
                 return (
                     <div key={index} className='modal'>
-                        <img
+                        <img 
                             src={src} 
                             alt={title}
                             width={150}

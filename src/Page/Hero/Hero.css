@@ -1,6 +1,6 @@
 .hero-container {
-    height: 75vh;
-    border-bottom: 3px solid #c07f05;
+    height: 70vh;
+    background-color: #999d9e;
   }
   
   .hero-content {
@@ -14,12 +14,12 @@
   .hero-info {
     flex: 1;
     padding-left: 10em;
-    color: beige;
+    color: rgb(255, 255, 255);
     
   }
   
   .text-change{
-    color: #c07f05;
+    color: #EABE6C;
 
   }
 
@@ -27,11 +27,11 @@
     font-size: 2.5rem;
     margin-bottom: 10px;
     filter: drop-shadow(30px 10px 4px #00000052);
-
   }
   
   .hero-info p {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+    font-family: 'Satoshi', sans-serif;
     filter: drop-shadow(30px 10px 4px #00000052);
   }
   
@@ -42,25 +42,26 @@
   
   .hero-image img{
     width: 40vw;
+    margin-top: -6em;
     filter: drop-shadow(30px 10px 4px #00000052);
     animation: slideFromLeft 10s ease forwards infinite;
   }
 
   .heroBTN{
     margin-left: 5em;
-    padding: 10px 20px;
-    border-radius: 20px;
-    background-color:#240A34; 
-    color: #EABE6C;
+    padding: 20px 30px;
+    border-radius: 40px;
+    background-color:#EABE6C; 
+    color: #676464ee;
     font-weight: bold;
-    font-size: 14px;
-    border: .1px solid #240A34;
-    transition: all .5s;
+    font-size: 1.5em;
+    border: .1px solid #EABE6C;
+    transition: all .5s cubic-bezier(.17,.67,.83,.67);
   }
 
   .heroBTN:hover{
     background-color:#240a3400; 
-    color: #ffa200;
+    color: #EABE6C;
     cursor: pointer;
   }
 

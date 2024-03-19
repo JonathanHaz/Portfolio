@@ -3,7 +3,7 @@ import './Project.css'
 
 export default function Project({index, title, setModal,link}) {
   const handleClick = () => {
-    window.location.href = link; // Navigate to the provided link
+    window.location.href = link;
   };
 
   return (

@@ -32,7 +32,7 @@ const LoadingAnimation = ({ children }) => {
           left: 0,
           right: 0,
           bottom: 0, 
-          backgroundColor: 'purple',
+          backgroundColor: '#1c1d20',
           zIndex: 9999,
           borderBottomRightRadius: '40%', 
           borderBottomLeftRadius: '40%', 

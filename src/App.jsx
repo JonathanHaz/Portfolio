@@ -9,7 +9,7 @@ function App() {
   
 
     return (
-        <div >
+        <div style={{backgroundColor:"#999d9e"}} >
         {/* <StickyCursor/> */}
         <LoadingAnimation/>
         <Navbar/>

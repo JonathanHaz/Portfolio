@@ -1,11 +1,11 @@
 .modalContainer {
-    height: 200px;
+    height: 140px;
     width: 200px;
-    position: fixed; /* Change to fixed to ensure it's positioned relative to the viewport */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Center the modal */
-    background-color: #891652;
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: #999d9e;
     overflow: hidden;
     pointer-events: none;
     display: flex;
