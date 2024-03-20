@@ -1,4 +1,4 @@
-.project{
+.project {
     display: flex;
     width: 80%;
     padding: 50px 100px 50px 100px;
@@ -7,30 +7,51 @@
     border-top: 2px solid #000;
     cursor: pointer;
     transition: all .2s linear;
-    color: #676869;
-}
-
-.project:hover{
+    color: #505152;
+  }
+  
+  .project:hover {
     opacity: 0.5;
-}
-
-.project h2{
+  }
+  
+  .project h2 {
     font-size: 5em;
     font-weight: 400;
     margin: 0px;
     transition: all .2s linear;
-}
-
-.project:hover h2{
+  }
+  
+  .project:hover h2 {
     transform: translateX(-10px);
-    
-}
-
-.project p{
+  }
+  
+  .project p {
     font-weight: 300;
     transition: all .2s linear;
-}
-
-.project:hover p{
+  }
+  
+  .project:hover p {
     transform: translateX(10px);
-}
+  }
+  
+  @media (max-width: 900px) {
+    .project {
+      width: 100%;
+      padding: 20px;
+      flex-direction: column;
+      align-items: flex-start;
+      border-top: 1px solid;
+    }
+  
+    .project h2 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+      transform: none;
+    }
+  
+    .project p {
+      margin-top: 0.5em;
+      transform: none;
+    }
+  }
+  

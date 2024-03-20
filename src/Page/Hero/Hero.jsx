@@ -34,7 +34,7 @@ export default function Hero() {
   const currentText = isJonathan ? " Jonathan Hazan" : " Full Stack Developer";
 
   return (
-    <div className='hero-container'>
+    <div className='hero-container' id='home'>
       <div className='hero-content'>
               <motion.div className='hero-info'
           initial={{ opacity: 0, x: -100 }}

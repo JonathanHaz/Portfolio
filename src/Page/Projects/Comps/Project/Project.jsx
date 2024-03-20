@@ -11,7 +11,7 @@ export default function Project({index, title, setModal,link}) {
     onMouseLeave={()=>{setModal({active:false, index:index})}}
     onMouseEnter={()=>{setModal({active:true, index:index})}}>
       <h2>{title}</h2>
-      <p>Web Designer</p>
+      <p>©2023-2024</p>
     </div>
   )
 }

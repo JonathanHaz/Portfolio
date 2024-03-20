@@ -46,8 +46,9 @@
     padding: 25px 35px;
     border-radius: 35px;
     cursor: pointer;
-    background-color: bisque;
-    color: purple;
+    background-color: #EABE6C;
+    border: .1px solid #EABE6C;
+    color: #EEE;
     font-weight: 600;
     font-size: 1em;
     border: none;
@@ -55,8 +56,8 @@
   }
   
   .btns button:hover {
-    background-color: purple;
-    color: bisque;
+    background-color: #240a3400;
+    color: #EABE6C;
     border: 1px solid bisque;
     transform: scale(1.02);
   }
@@ -68,7 +69,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2em; /* Add padding for better spacing */
+    padding: 0 2em; 
   }
   
   .socials {
@@ -82,12 +83,21 @@
     color: gray;
   }
   
-  .socials-info {
-    color: white;
+  .socials-info{
     display: flex;
     flex-direction: row;
     gap: 10px;
     font-size: 1.3em;
+  }
+
+  .socials-info a{
+    color: white;
+    text-decoration: none;
+    transition: all .2s;
+  }
+
+  .socials-info a:hover{
+    color: #EEE;
   }
 
   .time h1{
@@ -96,5 +106,55 @@
 
   .time p{
     color: white;
+  }
+  
+  .copyright{
+    margin-top: 4em;
+    color: white;
+  }
+
+  @media (max-width: 900px) {
+    .contactContainer {
+      margin-top: 100px;
+    }
+
+    .medium {
+      margin-left: 2em;
+      margin-right: 2em;
+    }
+  
+    .btns {
+      width: 100%;
+      flex-direction: column;
+    }
+  
+    .avatar{
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 0;
+      margin-bottom: 10px;
+    }
+
+    .btns button {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+  
+    .footer {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 2em;
+      text-align: center;
+      align-items: center; 
+      height: 20rem;
+    }
+    
+    .socials {
+      margin-top: 1em;
+      transform: none;
+      text-align: center; 
+    }
+    
   }
   

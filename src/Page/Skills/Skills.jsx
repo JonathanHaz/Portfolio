@@ -19,6 +19,7 @@ export default function Skills() {
   
   return (
     <motion.section
+      id='skills'
       className='skills-container'>
         <h1 style={{fontSize:"40px"}}>My Skills</h1>
         <h1>Here are some of my skills on which I have been working on for the past year.</h1>
@@ -28,38 +29,26 @@ export default function Skills() {
           <div className='skills'>
             <div className='skill'>
               <div className='skill-card'>
-                <FaHtml5 style={{color:'rgb(252,74,11)'}} />
+                <FaHtml5 />
                 <p>HTML5</p>
               </div>
             </div>
             <div className='skill'>
               <div className='skill-card'>
-                <FaCss3Alt style={{color:'rgb(33,76,229)'}} />
+                <FaCss3Alt/>
                 <p>CSS3</p>
               </div>
             </div>
             <div className='skill'>
               <div className='skill-card'>
-                <FaJs style={{color:'rgb(247,223,30)'}} />
+                <FaJs />
                 <p>JavaScript</p>
               </div>
             </div>
             <div className='skill'>
               <div className='skill-card'>
-                <FaReact style={{color:'rgb(0,217,253)'}} />
+                <FaReact />
                 <p>React</p>
-              </div>
-            </div>
-            <div className='skill'>
-              <div className='skill-card'>
-                <SiBootstrap style={{color:'rgb(141,26,255)'}} />
-                <p>Bootstrap</p>
-              </div>
-            </div>
-            <div className='skill'>
-              <div className='skill-card'>
-                <SiMaterialdesignicons style={{color:'rgb(0,127,255)'}} />
-                <p>Material UI</p>
               </div>
             </div>
           </div>
@@ -69,25 +58,25 @@ export default function Skills() {
           <div className='skills'>
             <div className='skill'>
               <div className='skill-card'>
-                <FaNode style={{color:'rgb(114,169,113)'}} />
+                <FaNode />
                 <p>Node.js</p>
               </div>
             </div>
             <div className='skill'>
               <div className='skill-card'>
-                <SiMongodb style={{color:'rgb(82,171,76)'}} />
+                <SiMongodb />
                 <p>MongoDB</p>
               </div>
             </div>
             <div className='skill'>
               <div className='skill-card'>
-                <IoLogoNodejs style={{color:'rgb(105,159,99)'}} />
+                <IoLogoNodejs />
                 <p>Express.js</p>
               </div>
             </div>
             <div className='skill'>
               <div className='skill-card'>
-              <IoLogoFirebase style={{color:'rgb(255,204,50)'}} />
+              <IoLogoFirebase />
                 <p>Firebase</p>
               </div>
             </div>
@@ -99,25 +88,25 @@ export default function Skills() {
         <div className='skills'>
           <div className='skill'>
             <div className='skill-card'>
-              <FaGitAlt style={{color:'rgb(240,80,51)'}} />
+              <FaGitAlt />
               <p>Git</p>
             </div>
           </div>
           <div className='skill'>
             <div className='skill-card'>
-              <RiGithubFill style={{color:'rgb(0,0,0)'}} />
+              <RiGithubFill />
               <p>GitHub</p>
             </div>
           </div>
           <div className='skill'>
             <div className='skill-card'>
-              <TbBrandVscode style={{color:'rgb(37,174,244)'}} />
+              <TbBrandVscode />
               <p>VSCode</p>
             </div>
           </div>
           <div className='skill'>
             <div className='skill-card'>
-              <SiPostman style={{color:'rgb(255,108,56)', backgroundColor:'white', borderRadius:'50%'}} />
+              <SiPostman />
               <p>Postman</p>
             </div>
           </div>

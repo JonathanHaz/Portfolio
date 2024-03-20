@@ -1,17 +1,16 @@
 .modalContainer {
     height: 140px;
-    width: 200px;
+    width: 160px;
     position: fixed; 
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    background-color: #999d9e;
+    background-color: #2b2b2b;
     overflow: hidden;
     pointer-events: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
   }
   
   .modalSlider {

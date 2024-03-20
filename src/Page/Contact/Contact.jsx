@@ -6,8 +6,13 @@ export default function Contact() {
   // Get the current date and time
   const currentDateTime = new Date().toLocaleString();
 
+  // Function to open email client
+  const handleEmailClick = () => {
+    window.open('mailto:yonatanhazan1337@gmail.com');
+  };
+
   return (
-    <div className='contactContainer'>
+    <div className='contactContainer' id='contact'>
       <div className='medium'>
         <div className='avatar'>
           <img src={avatar} alt="" />
@@ -16,7 +21,7 @@ export default function Contact() {
         <div className='row'></div>
         <div className='btns'>
           <button>+972586775225</button>
-          <button>yonatanhazan1337@gmail.com</button>
+          <button onClick={handleEmailClick}>yonatanhazan1337@gmail.com</button>
         </div>
       </div>
       <footer className='footer'>
@@ -24,12 +29,15 @@ export default function Contact() {
           <h1>Local Time</h1>
           <p>{currentDateTime}</p>
         </div>
+        <div className='copyright'>
+          <p>©2024 Made By Jonathan Hazan</p>
+        </div>
         <div className='socials'>
           <h1>Socials</h1>
           <div className='socials-info'>
-            <p>Linkendin</p>
-            <p>Instagram</p>
-            <p>Github</p>
+            <p><a href="">Linkendin</a></p>
+            <p><a href="">Instagram</a></p>
+            <p><a href="">Github</a></p>
           </div>
         </div>
       </footer>

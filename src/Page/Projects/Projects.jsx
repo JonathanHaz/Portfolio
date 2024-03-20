@@ -34,7 +34,7 @@ export default function Projects() {
     const [modal, setModal] = useState({active: false, index: 0});
 
     return (
-        <div className='main'>
+        <div className='main' id='projects'>
             <div className='body'>
                 <h1>Here are some of my projects</h1>
                 {projects.map((project, index) => {

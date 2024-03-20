@@ -1,0 +1,39 @@
+.slidingTextContainer {
+    position: absolute;
+    font-size: 10vh;
+    bottom: 2em;
+    white-space: nowrap;
+    width: 50%;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    filter: drop-shadow(30px 10px 4px #00000052);
+    font-family: Sharpie, sans-serif;
+}
+
+.slidingTextContainer2 {
+    position: absolute;
+    font-size: 10vh;
+    bottom: 1em;
+    white-space: nowrap;
+    width: 50%;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    filter: drop-shadow(30px 10px 4px #00000052);
+    font-family: Sharpie, sans-serif;
+}
+
+@media (max-width: 900px) {
+
+    .slidingTextContainer{
+        font-size: 3em;
+        bottom: -4em;
+
+    }
+   
+    .slidingTextContainer2{
+        font-size: 3em;
+        bottom: -6em;
+
+    }
+
+}
