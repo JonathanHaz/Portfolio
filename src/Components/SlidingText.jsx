@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import './SlidingText.css'; // Import the CSS file
+import './SlidingText.css';
 
 export default function SlidingText() {
 

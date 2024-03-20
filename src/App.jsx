@@ -1,6 +1,6 @@
 import React, {  } from 'react';
 import './App.css';
-import StickyCursor from './Components/StickyCursor/StickyCursor';
+// import StickyCursor from './Components/StickyCursor/StickyCursor';
 import Navbar from './Components/Navbar/Navbar';
 import Page from './Page/Page';
 import LoadingAnimation from './Components/LoadingAnimation';

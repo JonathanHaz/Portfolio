@@ -1,0 +1,29 @@
+.loading-animation-container {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1c1d20;
+    z-index: 9999;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    width: 110%;
+    height: 150%;
+    margin-left: -5%;
+  }
+
+  
+@media (max-width: 900px) {
+  .loading-overlay{
+    height: 110%;
+    width: 60%;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+  }
+}

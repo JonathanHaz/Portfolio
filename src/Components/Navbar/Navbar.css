@@ -13,7 +13,7 @@
 }
 
 .navlinks {
-  background-color: #1c1d2073;
+  background-color: rgba(28, 29, 32, 0.5); 
   height: 3em;
   width: 20%;
   border-radius: 40px;
@@ -23,6 +23,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  backdrop-filter: blur(8px);
   display: flex;
 }
 
@@ -58,7 +59,7 @@
 
 
 .navlinks.open {
-  background-color: #1c1d2073;
+  background-color: rgba(28, 29, 32, 0.5);
   width: 20%;
   display: flex;
   justify-content: center;
@@ -66,7 +67,6 @@
   list-style-type: none;
   display: flex;
 }
-
 
 
   @media (max-width: 900px) {

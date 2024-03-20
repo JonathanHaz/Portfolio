@@ -3,10 +3,8 @@ import './Contact.css';
 import avatar from '../../assets/profile.png';
 
 export default function Contact() {
-  // Get the current date and time
   const currentDateTime = new Date().toLocaleString();
 
-  // Function to open email client
   const handleEmailClick = () => {
     window.open('mailto:yonatanhazan1337@gmail.com');
   };

@@ -57,7 +57,8 @@ export default function Hero() {
           </h1>
           <p >Passionate about creating efficient and scalable web applications.</p>
           <p >Let's build something amazing together!</p>
-          <button className='heroBTN'>Resume</button>
+          <button className='heroBTN'><a href="https://drive.google.com
+          /file/d/1beZID9UmXeNPL1cDppSdDPWn7bXigyZx/view?usp=sharing">Resume</a></button>
         </motion.div>
         <motion.div className='hero-image'
           initial={{ opacity: 0, scale: 0.5 }}

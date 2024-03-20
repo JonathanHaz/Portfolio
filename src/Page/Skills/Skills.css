@@ -96,24 +96,24 @@
       justify-content: center;
       margin-top: 20em;
       background-color: rgb(255, 255, 255);
-      height: auto; /* Change height to auto for responsiveness */
-      padding: 20px; /* Add padding for better spacing */
+      height: auto;
+      padding: 20px; 
   }
   
   .skills-container h1 {
       color: #000;
-      font-size: 32px; /* Adjust font size for smaller screens */
+      font-size: 32px;
   }
   
   .skills-container h2 {
       color: #000;
-      font-size: 24px; /* Adjust font size for smaller screens */
+      font-size: 24px;
   }
   
   .card-container {
       display: flex;
-      flex-direction: column; /* Change to column layout for better stacking on smaller screens */
-      align-items: center; /* Center the cards vertically */
+      flex-direction: column;
+      align-items: center;
   }
   
   .card {
@@ -122,7 +122,7 @@
       background-color: #393E46;
       border-radius: 10px;
       padding: 20px;
-      margin: 10px 0; /* Adjust margin for better spacing */
+      margin: 10px 0;
       box-shadow: rgba(0, 0, 0, 0.973) 0px 5px 15px;
   }
   
@@ -179,6 +179,4 @@
       color: #EEEEEE;
       padding-left: 10px;
   }
-  
-
   }

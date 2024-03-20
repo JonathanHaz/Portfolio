@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt } from 'react-icons/fa';
-import { SiBootstrap, SiMaterialdesignicons, SiMongodb, SiPostman } from 'react-icons/si';
+import { SiMongodb, SiPostman } from 'react-icons/si';
 import { IoLogoFirebase } from "react-icons/io5";
 import { FaNode } from 'react-icons/fa';
 import { IoLogoNodejs } from 'react-icons/io';
